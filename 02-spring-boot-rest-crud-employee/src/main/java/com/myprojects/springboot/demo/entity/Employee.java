@@ -1,4 +1,4 @@
-package com.myprojects.springboot.entity;
+package com.myprojects.springboot.demo.entity;
 
 import jakarta.persistence.*;
 

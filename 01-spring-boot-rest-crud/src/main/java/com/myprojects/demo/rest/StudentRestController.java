@@ -23,7 +23,7 @@ public class StudentRestController {
     @RequestMapping("/student")
     public List<Student> getStudent(){
         return theStudents;
-    }
+}
     @RequestMapping("/student/{idstudent}")
     public Student getStudentById(@PathVariable int idstudent){
         //check the idstudent againt the list size
