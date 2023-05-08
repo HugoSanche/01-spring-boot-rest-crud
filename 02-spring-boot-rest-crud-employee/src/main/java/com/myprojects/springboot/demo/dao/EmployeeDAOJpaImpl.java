@@ -46,7 +46,10 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO{
     //Note.- don't use the @Transactional at DAO layer It will be handled at service layer
     @Override
     public void deleteById(int id) {
+        //find employee by id
             Employee theEmployee=entityManager.find(Employee.class, id);
+        // remove employee
+        entityManager.remove(theEmployee);
     }
 
 }
